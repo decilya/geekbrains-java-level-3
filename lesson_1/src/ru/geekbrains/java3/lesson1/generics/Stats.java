@@ -30,17 +30,17 @@ public class Stats<T extends Integer> {
 
         return arr;
     }
-    
+
     public static void main(String args[]) {
         Stats<Integer> intStats = new Stats<Integer>(1, 2, 3, 4, 5);
 
         System.out.println(intStats.convertToArrayList().toString());
 
         Box<Apple> appleBox = new Box<>(new Apple(), new Apple());
-        Box<Orange> orangeBox = new Box<>(new  Orange(), new Orange());
+        Box<Orange> orangeBox = new Box<>(new Orange(), new Orange());
 
+        // нельзя
+        // Box<Orange> tmpBox = new Box<>(new  Orange(), new Orange(), new Apple());
     }
-
-
 }
 

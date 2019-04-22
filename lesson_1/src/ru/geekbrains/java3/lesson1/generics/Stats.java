@@ -1,5 +1,8 @@
 package ru.geekbrains.java3.lesson1.generics;
 
+import ru.geekbrains.java3.lesson1.generics.fruits.Apple;
+import ru.geekbrains.java3.lesson1.generics.fruits.Orange;
+
 import java.util.ArrayList;
 
 public class Stats<T extends Integer> {
@@ -38,7 +41,9 @@ public class Stats<T extends Integer> {
 
         System.out.println(intStats.convertToArrayList().toString());
 
-        System.out.println("Hello, World!");
+        Box<Apple> appleBox = new Box<>(new Apple(), new Apple());
+        Box<Orange> orangeBox = new Box<>(new  Orange(), new Orange());
+
     }
 
 

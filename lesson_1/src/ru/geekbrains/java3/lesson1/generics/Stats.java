@@ -30,12 +30,7 @@ public class Stats<T extends Integer> {
 
         return arr;
     }
-
-    /**
-     *
-     * @param args
-     */
-
+    
     public static void main(String args[]) {
         Stats<Integer> intStats = new Stats<Integer>(1, 2, 3, 4, 5);
 
